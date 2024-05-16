@@ -9,23 +9,26 @@ pipeline {
             }
         }
 
-        // stage('SonarQube Analysis') {
-        //     steps{
-        //         script{
-        //             def scannerHome = tool 'SonarScanner';
-        //             withSonarQubeEnv() {
-        //                 sh "${scannerHome}/bin/sonar-scanner"
-        //                 echo "Successfully Scanned Vulnerabilities"
-        //             }
-        //         }
-        //     }
-        // }
+        stage('SonarQube Analysis') {
+            steps{
+                script{
+                    def scannerHome = tool 'SonarScanner';
+                    withSonarQubeEnv() {
+                        sh "${scannerHome}/bin/sonar-scanner"
+                        echo "Successfully Scanned Vulnerabilities"
+                    }
+                }
+            }
+        }
 
         stage("Docker Build"){
             steps{
-                docker --version
-                docker build -t FEWebsite .
-                docker run -d -p 8085:80 --name=Onixwebsite FEWebsite
+                script{
+                sh 'docker --version'
+                sh 'docker build -t FEWebsite . '
+                sh 'docker run -d -p 8085:80 --name=Onixwebsite FEWebsite'
+            }
+                
             }
         }
     }
