@@ -25,8 +25,8 @@ pipeline {
             steps{
                 script{
                 sh 'docker --version'
-                sh 'docker build -t FEWebsite . '
-                sh 'docker run -d -p 8085:80 --name=Onixwebsite FEWebsite'
+                sh 'docker build -t fewebsite . '
+                sh 'docker run -d -p 8085:80 --name=onixwebsite fewebsite'
             }
                 
             }
