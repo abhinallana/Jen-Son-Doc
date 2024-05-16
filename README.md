@@ -21,9 +21,9 @@ This project serves as a hands-on tutorial for understanding the core concepts b
 
 <h3>Features</h3>
 
-    <h6>Sonar Analysis</h6>: Learn how to analyze code quality using SonarQube.
-    <h6>Containerization</h6>: Understand the principles behind containerization and Docker.
-    <h6>Jenkins Pipeline</h6>: Explore the power of Jenkins by automating the build, test, and deployment process with a Jenkinsfile pipeline.
+    Sonar Analysis: Learn how to analyze code quality using SonarQube.
+    Containerization: Understand the principles behind containerization and Docker.
+    Jenkins Pipeline: Explore the power of Jenkins by automating the build, test, and deployment process with a Jenkinsfile pipeline.
 
 <h3>Getting Started</h3>
 
