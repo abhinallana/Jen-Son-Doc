@@ -29,10 +29,10 @@ This project serves as a hands-on tutorial for understanding the core concepts b
 
 To get started with this project, follow these steps:
 
-    Clone this repository to your local machine.
-    Install the required dependencies (Jenkins, SonarQube, Docker) --> <a>https://github.com/abhinallana/DevOps-Tools-Installation</a> 
-    Follow the link or documentation of each to set up the particular tools.
-    Explore the sample code and Jenkinsfile provided in the repository.
+   Clone this repository to your local machine.
+   Install the required dependencies (Jenkins, SonarQube, Docker) --> <a>https://github.com/abhinallana/DevOps-Tools-Installation</a> 
+   Follow the link or documentation of each to set up the particular tools.
+   Explore the sample code and Jenkinsfile provided in the repository.
 
 <h3>Usage</h3>
 
