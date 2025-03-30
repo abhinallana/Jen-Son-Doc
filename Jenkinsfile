@@ -20,7 +20,7 @@ pipeline {
                 }
             }
         }
-
+//sqa_cbc4322af6f48789191a156e7a062206ccb3d293
         stage("Docker Build"){
             steps{
                 script{
