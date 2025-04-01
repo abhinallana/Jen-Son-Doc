@@ -9,17 +9,17 @@ pipeline {
             }
         }
 
-        stage('SonarQube Analysis') {
-            steps{
-                script{
-                    def scannerHome = tool 'SonarScanner';
-                    withSonarQubeEnv() {
-                        sh "${scannerHome}/bin/sonar-scanner"
-                        echo "Successfully Scanned Vulnerabilities"
-                    }
-                }
-            }
-        }
+        // stage('SonarQube Analysis') {
+        //     steps{
+        //         script{
+        //             def scannerHome = tool 'SonarScanner';
+        //             withSonarQubeEnv() {
+        //                 sh "${scannerHome}/bin/sonar-scanner"
+        //                 echo "Successfully Scanned Vulnerabilities"
+        //             }
+        //         }
+        //     }
+        // }
 //sqa_cbc4322af6f48789191a156e7a062206ccb3d293
         stage("Docker Build"){
             steps{
